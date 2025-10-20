@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kejutan Ulang Tahun 🎉</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffd1dc, #ffe4e1);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    button {
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ff3385;
+    }
+    #content {
+      display: none;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+    h2 {
+      color: #ff4d88;
+      margin-top: 20px;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+      max-width: 400px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showSurprise()">🎁 Lihat Kejutan</button>
+
+  <div id="content">
+    <img src="IMG_0223.jpeg" alt="Kejutan Foto">
+    <h2>🎉 Selamat Ulang Tahun! 🎂</h2>
+    <p>Semoga hari spesial ini membawa banyak kebahagiaan, senyum, dan cinta. <br>
+    Tetap jadi pribadi yang baik, kuat, dan menginspirasi. <br>
+    Semoga setiap langkahmu penuh berkah dan kebahagiaan 💖</p>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.querySelector("button").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }
+  </script>
+</body>
+</html>
